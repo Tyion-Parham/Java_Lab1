@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 
 public class Register {
-    // Main class responsible for
+    // Main class responsible for taking user input and creating the purse object
     public static void main(String[] args) {
         System.out.println("Enter an amount of money in the purse: ");
         Scanner sc = new Scanner(System.in);
@@ -26,7 +26,7 @@ public class Register {
         Denomination nickel = new Denomination("nickel", .05);
         Denomination penny = new Denomination("penny", .01);
 
-        while (amt > 0.005){
+        while (amt >= 0.005){
             tempnum = 0;
             if (amt >= 100){
                 while (amt >= 100){
