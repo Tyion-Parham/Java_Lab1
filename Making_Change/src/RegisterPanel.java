@@ -3,6 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+// Makes Input section of the GUI and also holds a PursePanel
 public class RegisterPanel extends JPanel{
     private Register register;
     private JPanel inputPanel;
@@ -12,7 +13,7 @@ public class RegisterPanel extends JPanel{
     public RegisterPanel(){
         register = new Register();
 
-        input = new JTextField(7);
+        input = new JTextField(7); // allows only 7 characters
         inputPanel = new JPanel();
         JLabel label = new JLabel("Enter Amount in Wallet: $");
         inputPanel.add(label);

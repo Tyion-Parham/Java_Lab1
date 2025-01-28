@@ -1,5 +1,6 @@
 import javax.swing.*;
 
+// the big JFrame
 public class MakingChange {
     public static void main(String[] args) {
         JFrame Making_Change = new JFrame("Making Change");
